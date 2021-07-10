@@ -1,0 +1,237 @@
+body, * {
+    margin: 0 auto;
+    box-sizing: border-box;
+    
+}
+
+.logo {
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    width: 40%;
+    text-align: center;
+    margin-top: 25px;
+}
+.logo > h2 {
+    font-size: 82px;
+    letter-spacing: 0.3rem;
+    font-weight:300;
+}
+
+.logo > p {
+    font-size: 36px;
+    letter-spacing: 0.2rem;
+    margin-top: -10px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+nav {
+    font-family: "yomogi", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.br {
+    width: 60%;
+    border-bottom: 2px solid black;
+}
+
+.nav_list {
+    list-style-type: none;
+    display: flex;
+}
+.list_item {
+    display: inline;
+    padding: 25px;
+    font-size: 43px;
+}
+
+.list_item > a {
+    text-decoration: none;
+    color: black;
+}
+
+.list_item:hover {
+    text-decoration: underline;
+}
+
+/* * ------- WELCOME ------------ */
+
+.welcome_container {
+    margin-top: 75px;
+    display: flex;
+}
+
+.welcome_txt {
+    flex-basis: 60%;
+}
+
+.welcome_photo > img {
+    margin-left: -100px;
+    border-radius: 10px;
+}
+
+.welcome_tittle {
+    margin-top: 30px;
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    font-size: 88px;
+    font-weight: lighter;
+    text-decoration: underline yellow;
+}
+
+.welcome_short {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    font-family: "yomogi", sans-serif;
+}
+
+
+/*? ------ offer ----*/
+
+.offer_container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-gap: 25px;
+}
+
+.offer_item_img {
+    opacity:0.9;
+}
+.offer_item_img > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.offer_item_img:hover {
+    opacity:1;
+}
+
+.offer_tittle {
+    margin-top: 30%;
+    font-size: 48px;
+    text-align: center;
+    font-family: "yomogi", sans-serif;
+    margin-bottom: 20px;;
+}
+
+.offer_paragraph {
+    font-size: 22px;
+    width: 80%;;
+}
+.offer_more_btn {
+    font-size: 22px;
+    width: 50%;
+    height: 75px;
+    position: absolute;
+    bottom: 25px;
+    right: 25px;
+    outline: none;
+    border-radius: 15px;
+    color: yellowgreen;
+    background: transparent;
+    box-shadow: 0 0 15px black;
+}
+
+.offer_item_txt {
+    position: relative;
+    height: 100%;
+}
+/*! ----- GRID gallery */
+main {
+    width: 80%;
+}
+
+.gallery_container {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-gap: 50px;
+}
+
+.grid_item > img {
+    max-width: 100%;
+    height: auto;
+}
+.grid_item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1 / span 2;
+}
+
+.grid_item:nth-child(4) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+
+/* * CONTACT FORM */
+
+.contact_container {
+    width: 80%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.contact_item {
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.form_container {
+    flex-direction: column;
+}
+
+form > *{
+    margin-bottom: 20px;
+}
+
+form > input {
+    width: 80%;
+    height: 50px;
+    outline: none;
+    background:transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+form > textarea {
+    width: 80%;
+}
+
+.btn {
+    width: 80%;
+    height: 50px;
+}
+
+
+.name > h2 {
+    margin-top: 80px;
+    font-family: 'Zen Tokyo Zoo', sans-serif;
+    font-size: 68px;
+}
+
+.addres > p {
+    font-size: 24px;
+    font-family: "yomogi", sans-serif;
+}
+
+.media > img {
+    padding: 5px;
+    margin-top: 25px;
+}
+
+/*! --- FOOTER ---*/
+
+
+.footer {
+    margin-top: 25px;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    bottom: 0;
+}
